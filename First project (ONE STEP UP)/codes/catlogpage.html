@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catlog</title><!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        } 
+        .body{
+            background-color: rgb(35, 133, 172);
+        }
+        .container
+        {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+        .card 
+        {
+            width: 300px;
+            height: 380px;
+            background-color: whitesmoke;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: auto;
+        }
+        .card h1{
+            font-size: 2rem;
+            position: relative;
+        }
+        .card p{
+            color: grey;
+            margin-top: 50px;
+            border-bottom: 50px;
+        }
+        .card a{
+            position: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            padding-left: 30px;
+            border-radius: 20px;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            font-weight: bold;
+            box-shadow: 2px 2px 15px rgb(255, 252, 252);
+            
+        }
+        .card:hover {
+            box-shadow: 2px 2px 15px rgb(0, 0, 0);
+        }
+.button:hover{
+    box-shadow: 2px 2pc 15px rgb(24, 136, 170);
+}
+.about {
+    text-size-adjust: 10px;
+    font-weight: bold;
+}
+.about h6{
+    width :100%;
+    font-weight: bold;
+}
+.about h5{
+    width :100%;
+    font-weight: bold;
+}
+.index{
+    width :100%;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Add these media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Display cards in a single column */
+  }
+
+  .card {
+    width: 90%; /* Adjust card width for mobile screens */
+    margin: 20px auto; /* Center-align cards */
+  }
+
+  .card h1 {
+    font-size: 1.5rem; /* Reduce font size for card headings */
+  }
+
+  .card p {
+    margin-top: 20px; /* Increase margin for card paragraphs */
+  }
+
+  .about {
+    text-align: center; /* Center-align contact/about section */
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+    </style>
+</head>
+    <body>
+        <nav>
+            <div class="nav-wrapper #03a9f4 light-blue">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="medium material-icons">dehaze</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="signin.html">Sign Up</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sign up.html">SinUp</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+    <div class="index">      
+          <CENTER>
+            <h4>ONE STEP UP</h4>
+                <h5>Course Offered 📚🏫📝 </h5>
+            </CENTER>  
+        </div>  
+    <div class="container">
+        <div class="card">
+            <h1>C Programming</h1>
+            <P>The C programming language is a procedural and general-purpose language that provides low-level access to system memory. A program written in C must be run through a C compiler to convert it into an executable that a computer can run.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>C++</h1>
+            <P>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs. C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>Java</h1>
+            <P>Java is a widely-used programming language for coding web applications.Java is a multi-platform, object-oriented and Java is a high-level, general-purpose, object-oriented, and secure programming language as well as a platform.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>Python</h1>
+            <P>Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>SQL</h1>
+            <P>SQL is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+         <div class="card">
+            <h1>HTML</h1>
+            <P>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content. HTML elements label pieces of content such as "this is a heading", "this is a paragraph".
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+         <div class="card">
+            <h1>CSS</h1>
+            <P>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>JavaScript</h1>
+            <P>JavaScript is a scripting or programming language that allows you to implement complex features on web pages every time a web page does more than just sit there and display static information for you to look at interactive maps, animated 2D/3D graphics.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>React</h1>
+            <P>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>AWS</h1>
+            <P>AWS is designed to allow application providers, ISVs, and vendors to quickly and securely host your applications'whether an existing application or a new SaaS-based application. You can use the AWS Management Console or well-documented web service.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>Django</h1>
+            <P>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>
+        <div class="card">
+            <h1>MangoDB</h1>
+            <P>MongoDB is a non-relational document database that provides support for JSON-like storage. The MongoDB database has a flexible data model that enables you to store unstructured data, and it provides full indexing support, and replication with rich and intuitive APIs.
+            </P>
+            <a href="http://127.0.0.1:5500/login.html" id="button">Start Learning</a></div>                                               
+        </div> 
+<div class="about" id="about">
+<hr>
+<center>
+<h5>Contact / About us</h5>
+<h6>9786471520 / Onestepup@gmail.com </h6>
+<p> NO:224 Neru street First Floor,
+    Thambaram,
+    chennai-600021</p>
+</center>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });</script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Slideshow Page</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #000000;
+        }
+        .slider {
+            width: 100%;
+        }
+        .slider img {
+            max-width: 100%;
+            height: auto;
+        }
+        .caption {
+            background: rgba(0, 0, 0, 0.7);
+            color: white; /* Added for better visibility */
+        }
+        .page-footer {
+            padding-top: 5px; /* Adjust the top padding to reduce the size */
+            padding-bottom: 5px; /* Adjust the bottom padding to reduce the size */
+        }
+        .indicators {
+            bottom: 5px; /* Adjust the bottom spacing of the navigation dots */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Your Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+    <!-- Slideshow -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="c.jfif" alt="C Programming"> 
+                <div class="caption center-align">
+                    <h3>C Programming</h3>
+                    <p>The C programming language is a procedural and general-purpose language that provides low-level access to system memory. A program written in C must be run through a C compiler to convert it into an executable that a computer can run.</p>
+                    <a href="login.html" class="btn">View</a>
+                </div>
+            </li>
+            <li>
+                <img src="c++.jfif" alt="C++"> 
+                <div class="caption center-align">
+                    <h3>C++</h3>
+                    <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs. C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+                    <a href="login.html" class="btn">View</a>
+                </div>
+            </li>
+            <li>
+                <img src="java.jpg" alt="Java"> 
+                <div class="caption center-align">
+                    <h3>Java</h3>
+                    <p>Java is a widely-used programming language for coding web applications.Java is a multi-platform, object-oriented and Java is a high-level, general-purpose, object-oriented, and secure programming language as well as a platform.</p>
+                    <a href="login.html" class="btn">View</a>
+                </div>
+            </li>
+            <!-- Add more slides here -->
+            <!-- Repeat the same format for additional slides -->
+        </ul>
+    </div>
+</main>
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align" style="margin-bottom: 0;">&copy; 2023 Your Company Name</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // Initialize Materialize components
+      document.addEventListener('DOMContentLoaded', function() {
+          // Initialize the slider
+          var slider = document.querySelectorAll('.slider');
+          M.Slider.init(slider);
+      });
+    </script>
+</body>
+</html>

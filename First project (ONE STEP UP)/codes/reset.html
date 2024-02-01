@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head> <center>
+    <title>Password Reset</title></center>
+    <style>
+        body{
+            margin:0;
+            padding:auto;
+            background-image: url(resetpassword.jpg);  
+            background-size: cover;       
+        }
+        .container{
+            top: 60%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        .card{
+            padding: 60px 40px 60px 40px;
+            background: transparent;
+            border-radius: 10px;
+            outline: auto;
+            outline-style:groove;
+            outline-color: rgb(34, 86, 99);
+            outline-color: rgba(0, 0, 0, 0.692);
+        }
+        .card:hover{
+            box-shadow: 2px 2px 15px skyblue;
+        }
+        #name{
+            width: 200px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            padding: 20px;
+            margin-bottom: 15px;
+            color: white;
+        }
+        ::placeholder{
+            color:rgb(255, 255, 255);
+            font-size: medium;
+        }
+        #button{
+            border-radius: 40px;
+            padding: 20px 20px;
+            background: black;
+            color: rgb(172, 219, 238);
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            margin-left: 80px;
+        }
+        #button:hover{
+            background-color: rgb(0, 0, 0);
+            color: rgb(234, 240, 241);
+            cursor: pointer;
+            box-shadow: 2px 2px 10px whitesmoke;
+        }
+
+        a{
+            font-size: 18px; 
+            color: rgb(255, 255, 255);  
+            margin-bottom: 2px;   
+            text-decoration: none; 
+        }
+.h1{
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 130px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    color:rgb(172, 219, 238);
+}
+  #button{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+text-decoration: none;
+position: absolute;
+margin-bottom: 2px;
+  }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="h1"><h1>Reset Possword
+        </h1></center></div>
+    <div class="container">
+        <div class="subclass">
+
+        <form>
+        <div class="card">
+            <input type="text" placeholder="E-Mail id" id="name"><br>
+            <input type="password" placeholder="New Password " id="name"><br>
+            <input type="password" placeholder="Confirm Password" id="name"><br>
+          <a href="http://127.0.0.1:5500/login.html#about" id="button">Confirm</a> 
+        </div>
+    </div>
+    </div>   
+    </form>
+</body>
+</html>

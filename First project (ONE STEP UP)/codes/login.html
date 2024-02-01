@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  .container{
+    margin-top: 50px;
+    width: 50%;
+   
+  }
+  .card:hover
+  {
+    box-shadow: 2px 2px 10px black;
+  }
+  .card a{
+    margin-top: 20px;
+  }
+  .card-action button{
+    border-radius: 20px;
+    color: whitesmoke;
+    background-color: #03a9f4;
+  }
+  .card-action button:hover{
+    background-color: black;
+    color: whitesmoke;
+  }
+  .page-footer{
+    margin-top: 170px;
+  }
+    
+  
+</style>
+<body>
+  <nav>
+    <div class="nav-wrapper #03a9f4 light-blue">
+      <a href="#!" class="brand-logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="medium material-icons">dehaze</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sign up.html">Sign Up</a></li>
+        <li><a href="catlogpage.html">Courses</a></li>
+        <li><a href="#footer">About us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sign up.html">SinUp</a></li>
+    <li><a href="catlogpage.html">Courses</a></li>
+    <li><a href="#footer">About us</a></li>
+  </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Login</span>
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                        <p>Or continue with:</p>
+                        <a class="waves-effect waves-light btn"><i class="fab fa-google"></i> Google</a>
+                        <a class="waves-effect waves-light btn"><i class="fab fa-microsoft"></i> Microsoft</a>
+                    
+                    <div class="card-action">
+                        <!-- Submit button added here -->
+                        <div class="center-align">
+                          <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                        </div>
+                      </div>
+                        <a href="reset.html">Forgot Password?</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer class="page-footer #000000 black" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text"> Contact / About us</h5>
+            <p class="grey-text text-lighten-4"> 
+            <p>9786471520 / Onestepup@gmail.com <br>
+              NO:224 Neru street First Floor,<br>
+              Thambaram,<br>
+              chennai-600021</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>      
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    </script>
+</body>
+</html>
